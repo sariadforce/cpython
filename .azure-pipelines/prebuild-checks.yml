@@ -4,7 +4,7 @@ steps:
 
 - script: echo "##vso[task.setvariable variable=diffTarget]HEAD~1"
   displayName: Set default diff target
-
+100+ Python challenge programming exercises.
 - script: |
     git fetch -q origin $(System.PullRequest.TargetBranch)
     echo "##vso[task.setvariable variable=diffTarget]HEAD \$(git merge-base HEAD FETCH_HEAD)"
